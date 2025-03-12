@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Certificate</title>
+    <style>
+        /* Base Styles */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+            padding: 10px;
+            font-size: 16px;
+            /* Setting base font size */
+        }
+
+
+
+        .certificate-container {
+            position: relative;
+            width: 90vw;
+            max-width: 800px;
+        }
+
+        .certificate-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .certificate-text {
+            position: absolute;
+            top: 18%;
+            left: 8%;
+            width: 65%;
+            text-align: left;
+            font-size: 1.125rem;
+            /* 18px */
+            font-weight: bold;
+            color: #000;
+            /* padding: 0.625rem; 10px */
+        }
+
+        .certificate-text h1 {
+            font-size: 1.5rem;
+            /* 24px */
+            margin: 0;
+            color: green ;
+        }
+
+        .certificate-text p {
+            font-size: 1rem;
+            /* 16px */
+            margin: 0.625rem 0 0;
+            /* 10px */
+            line-height: 1.4;
+        }
+
+        .certificate-text span {
+            font-weight: bold;
+            /* color: #2c3e50; */
+            background-color: rgb(208, 205, 205);
+        }
+
+        .sign {
+            width: 6rem;
+
+
+            text-align: left;
+            font-size: 1.125rem;
+            /* 18px */
+            font-weight: bold;
+            color: #000;
+        }
+
+        .sign_text {
+
+            font-size: 0.5rem;
+            font-weight: bold;
+            color: #000;
+            width: 4rem;
+            line-height: 1.2;
+            word-wrap: break-word;
+            right: 3%;
+            border-top: 0.5px solid black;
+            width: inherit;
+            padding: 1px;
+        }
+
+
+        .flex {
+            position: absolute;
+            bottom: 4%;
+            right: 3%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .certificate-text {
+                top: 14%;
+                left: 6%;
+                width: 85%;
+                font-size: 1rem;
+                /* 16px */
+                padding: 0.5rem;
+                /* 8px */
+            }
+
+            .certificate-text h1 {
+                font-size: 1.0625rem;
+                /* 17px */
+            }
+
+            .certificate-text p {
+                font-size: 0.6875rem;
+                /* 11px */
+            }
+
+            .sign {
+                width: 3rem;
+            }
+
+            .sign_text {
+                font-size: 0.30rem;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .certificate-text {
+                top: 12%;
+                left: 5%;
+                width: 90%;
+                font-size: 0.6875rem;
+                /* 11px */
+                padding: 0.375rem;
+                /* 6px */
+            }
+
+            .certificate-text h1 {
+                font-size: 0.9375rem;
+                /* 15px */
+            }
+
+            .certificate-text p {
+                font-size: 0.5625rem;
+                /* 9px */
+            }
+
+            .sign {
+                width: 2rem;
+            }
+
+            .sign_text {
+                font-size: 0.15rem;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-container">
+
+        <div class="certificate-container">
+            <img src="bg-Final.jpg" alt="Certificate" class="certificate-img">
+            <div class="certificate-text">
+                <h1>Certificate of Completion</h1>
+                <p>
+                    This is to certify that <br>
+                    <span>Aditya Goel</span> <br><br>
+                    has successfully completed the online teacher development course <br>
+                    <span>Classroom Management for Young Learners - Second Edition</span> <br><br>
+                    with a duration of <span>2 Hours</span>.
+                </p>
+            </div>
+
+            <div class="flex">
+                <img class="sign" src="sign.png" alt="">
+
+                <div class="sign_text">
+                    <span>
+                        Francesca Woodward
+
+                    </span>
+                    <br>
+                    <span>
+                        Global Managing Director - English
+
+                    </span>
+                    <br>
+                    <span>
+
+                        Cambridge University Press & Assessment
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
